@@ -1,734 +1,391 @@
-# Master Product Document
+# ADVANCE LANDMARK LIMITED
 
-## Project Information
-- Project: Real Estate Lead Generation and Property Operations Platform
-- Client: Advance Landmark Limited (Savar DOHS)
-- Sponsor: Chairman Office
-- Prepared by: Md. Abdur Rouf Likhon
-- Version: 1.0
-- Date: 2026-04-01
-- Document status: Client submission draft
+**Chairman:** ফাহাদ হোসেন (Fahad Hossain)  
+**Address:** Plot: 268, Road: 12, Savar DOHS, Savar, Dhaka  
+**Phone:** 01711729009
 
-## 0. 1-Minute Client Snapshot (Visual First)
-### Why this platform wins
-- Conversion-first property experience with rich media trust layer (Image + Video + 360/3D)
-- Centralized lead CRM with SLA-based follow-up discipline
-- Campaign-to-CRM attribution for measurable marketing ROI
+## Document Control
 
-### First-minute business KPI targets
-| KPI | Target |
+| Field | Value |
 |---|---|
-| First response time | <= 10 minutes |
-| Inquiry to contacted | >= 85% |
-| Contacted to visit | >= 35% |
-| Visit to booking | >= 12% |
-| Organic growth (90 days) | +30% |
+| Document Title | Enterprise Real Estate Website Ecosystem - Master Scope Bible |
+| Version | 1.0 |
+| Date | April 2026 |
+| Confidentiality | Confidential |
+| Prepared For | Advance Landmark Limited |
+| Prepared For (Attention) | Chairman, Fahad Hossain |
+| Purpose | Single master scope for website development + full technical support services |
 
-### Visual 1: Business funnel (Ad to booking)
-```mermaid
-flowchart LR
-  A[Ad Impression] --> B[Landing Page]
-  B --> C[Visual Trust: Images Video 3D]
-  C --> D[Inquiry or Call]
-  D --> E[CRM Lead Created]
-  E --> F[Agent Follow-up]
-  F --> G[Site Visit]
-  G --> H[Booking]
-```
+## 1. Executive Summary
 
-### Visual 2: Solution architecture (executive)
-```mermaid
-flowchart TB
-  U[Buyers and Tenants] --> W[SEO Website and Landing Pages]
-  W --> API[Platform API]
-  API --> CRM[Lead CRM and Pipeline]
-  API --> PROP[Property and Media Service]
-  PROP --> CDN[CDN and Media Delivery]
-  CRM --> OPS[Sales Ops Dashboard]
-  OPS --> BIZ[Owner Reporting and KPIs]
-```
+Advance Landmark Limited requires a unified, enterprise-grade digital ecosystem that goes beyond website development. This master scope defines a complete delivery framework that includes platform engineering, content systems, lead and CRM workflows, analytics, and full technical support services.
 
-### Visual 3: Delivery timeline (9 weeks)
-```mermaid
-timeline
-  title Implementation at a Glance
-  Week 1 : Discovery and KPI freeze
-  Week 2 : UX and architecture baseline
-  Week 3-5 : Core build (website plus listing plus lead capture)
-  Week 6-7 : CRM and reporting
-  Week 8 : QA and UAT
-  Week 9 : Go-live and hypercare
-```
+This document combines two service tracks into one professional execution model:
 
-## Document Purpose
-This master document consolidates:
-- Product Requirements Document (PRD)
-- Project Requirements Specification (PRS)
-- Implementation Roadmap and Delivery Plan
+1. Website and platform development ecosystem.
+2. Ongoing technical growth and marketing support ecosystem.
 
-It is intended as a single source of truth for client review, engineering delivery, QA validation, and project governance.
+### 1.1 Strategic Outcomes
 
-## Table of Contents
-0. 1-Minute Client Snapshot (Visual First)
-1. Executive Summary
-2. Business Objectives and Outcomes
-3. Success Metrics and KPIs
-4. Scope Definition (In/Out)
-5. Stakeholders, Personas, and User Groups
-6. Functional Requirements
-7. Business Rules and Validation Rules
-8. Non-Functional Requirements
-9. Data Model (High-Level)
-10. API Surface (MVP)
-11. Role-Based Access Matrix
-12. Architecture and System Design
-13. Visualization and Advertising Experience
-14. Key User and System Flows
-15. Reporting, QA, and Traceability
-16. Delivery Roadmap
-17. Delivery Gates and Sign-off Criteria
-18. Go-Live, Hypercare, and Governance
-19. Risks, Dependencies, and Mitigation
-20. Future Phases
-21. Final Sign-off Block
+1. Position Advance Landmark as a top-tier real estate brand in Bangladesh.
+2. Generate consistent qualified leads across buyers, landowners, NRBs, and investors.
+3. Improve conversion through CRM, automation, and analytics-driven operations.
+4. Provide one-stop support for graphics, video, SEO, social, content, and paid media.
+
+### 1.2 Stakeholder Coverage
+
+| Stakeholder Group | Primary Need | Platform/Service Response |
+|---|---|---|
+| Prospective Buyers | Property discovery and trust | Search, project details, testimonials, EMI tools |
+| Landowners | JV confidence and transparency | Landowner portal, submission flow, progress tracking |
+| NRB Clients | Guided remote investment process | NRB desk, legal guide, virtual tour, currency support |
+| Customer Care Teams | Faster lead handling | CRM pipeline, lead routing, reminders |
+| Marketing Team | Growth and visibility | SEO, content, social media, ads management |
+
+## 2. Competitive Research Summary
+
+Research references were extracted from leading Bangladesh market players: BTI, Sheltech, Shanta, Assure Group, Navana, Swadesh, Rangs, ABC Real, Concord, Suvasthu, Bashundhara, AMLD.
+
+### 2.1 Benchmark Feature Matrix
+
+| Feature/Module | BTI | SHL | SHA | ASS | NAV | SWD | RNG | NWP |
+|---|---|---|---|---|---|---|---|---|
+| Residential Listings | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Commercial Listings | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes |
+| Land/Plot Sales | No | Yes | No | No | Yes | No | No | Yes |
+| Advanced Search Filter | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes |
+| Interactive Map | Yes | Yes | No | No | No | No | No | No |
+| Construction Tracker | Yes | No | No | No | No | No | No | No |
+| Landowner/JV Section | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes |
+| NRB Section | Yes | No | No | No | Yes | No | No | No |
+| Testimonials/Reviews | Yes | Yes | No | Yes | No | Yes | No | No |
+| Blog/Media | Yes | Yes | Yes | Yes | Yes | Yes | No | No |
+| Career Module | Yes | Yes | Yes | Yes | Yes | No | No | Yes |
+| WhatsApp/Hotline CTA | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes |
+
+### 2.2 Competitive Insights Applied in Scope
+
+1. Strong public listing and discovery model with deep filtering.
+2. High-trust project detail pages with media-rich proof.
+3. Stakeholder-specific sections (NRB and Landowner) for differentiated conversion.
+4. Marketing and content architecture as a long-term growth engine.
+
+## 3. Scope Architecture
+
+The solution is structured into six domains.
+
+| Domain | Area | Summary |
+|---|---|---|
+| Domain A | Public Website Frontend | Branding, property discovery, trust, lead capture |
+| Domain B | Customer Portal | Buyer/Landowner authenticated services |
+| Domain C | Admin and CMS Backend | Content operations, CRM, reporting |
+| Domain D | Marketing and Digital Integration | SEO, tracking, channel integration |
+| Domain E | Integrated Technical Support Services | Graphics, video, SEO operations, social, content, ads |
+| Domain F | Post-Launch Operations | SLA support, optimization, governance |
+
+## 4. Domain A - Public Website Frontend Modules
+
+### 4.1 Module Catalog
+
+| Module ID | Module Name | Objective |
+|---|---|---|
+| A1 | Homepage and Hero System | Build first impression and accelerate enquiry actions |
+| A2 | Property Listing Engine | Enable advanced browse, filter, compare, and save |
+| A3 | Project Detail Page | Deliver deep project confidence and conversion tools |
+| A4 | Interactive Project Map | Support geo-based property discovery |
+| A5 | NRB Portal | Convert overseas buyers with dedicated workflows |
+| A6 | Landowner/JV Portal | Attract and process joint-venture opportunities |
+| A7 | About and Corporate Identity | Strengthen trust through company credibility |
+| A8 | Reviews and Testimonials | Build social proof and purchase confidence |
+| A9 | Construction Status Tracker | Show transparent real-time progress |
+| A10 | Blog and Media Center | Drive SEO and thought leadership |
+| A11 | Gallery Module | Present visual portfolio across projects and events |
+| A12 | Career Module | Manage hiring pipeline digitally |
+| A13 | Contact and Lead Management | Centralize enquiry intake and routing |
+| A14 | EMI and Financial Tools | Help buyers evaluate affordability |
+| A15 | Bilingual Support (Bangla/English) | Expand audience reach and accessibility |
+
+### 4.2 Key Capabilities Included
+
+1. Full-screen hero with CTA actions and campaign/offer messaging.
+2. Advanced property search by type, location, size, status, budget, and handover timeline.
+3. Rich project page stack: galleries, floor plans, specs, maps, forms, and status widgets.
+4. Sticky conversion pathways: hotline, WhatsApp, callback, and booking requests.
+5. Content and trust components: leadership, awards, certifications, CSR, testimonials.
+6. Public construction dashboard and media updates per project.
+7. Multi-language infrastructure for Bangla/English with SEO-ready URL strategy.
+
+## 5. Domain B - Customer Portal (Authenticated)
+
+### 5.1 Modules
+
+| Module ID | Module Name | Objective |
+|---|---|---|
+| B1 | Authentication and Access Control | Secure onboarding, role-based access |
+| B2 | Buyer Dashboard | Self-service buyer interactions and records |
+| B3 | Landowner Dashboard | JV transparency, documents, progress views |
+
+### 5.2 Buyer and Landowner Portal Features
+
+1. Registration and login with OTP/social options.
+2. Favorites, enquiry status, appointment scheduling, notification center.
+3. Payment schedule and receipt/document vault views.
+4. Landowner agreement status, project media updates, communication channel.
+
+## 6. Domain C - Admin, CMS, CRM, and Reporting
+
+### 6.1 Modules
+
+| Module ID | Module Name | Objective |
+|---|---|---|
+| C1 | CMS and Content Operations | Non-technical content and page control |
+| C2 | Lead and CRM Pipeline | Structured conversion and follow-up workflow |
+| C3 | User and Role Management | Governance, permissions, auditability |
+| C4 | Analytics and Reporting | KPI visibility and business decision support |
+
+### 6.2 Key Admin Capabilities
+
+1. Project/blog/gallery/testimonial/team management with scheduling controls.
+2. Lead pipeline: New -> Contacted -> Site Visit -> Negotiating -> Booked -> Handover.
+3. Lead source tracking, duplicate detection, export, and assignment routing.
+4. GA4, GTM, heatmap, and channel-wise performance dashboard.
+
+## 7. Domain D - Marketing and Digital Integration
+
+### 7.1 Modules
+
+| Module ID | Module Name | Objective |
+|---|---|---|
+| D1 | SEO and Organic Growth Engine | Rank for commercial intent and local real-estate terms |
+| D2 | Social and Remarketing Integration | Build cross-channel visibility and remarketing funnels |
+
+### 7.2 Included Marketing Integrations
+
+1. Technical SEO, schema, sitemap, hreflang, and Core Web Vitals optimization.
+2. Channel pixels and tags: GA4, GTM, Meta Pixel, optional TikTok tracking.
+3. Email/SMS/push/WhatsApp integration for lifecycle communication.
+
+## 8. Domain E - Integrated Technical Support Services
+
+This domain extends delivery beyond development and provides full technical growth support under one contract framework.
+
+### 8.1 Service Coverage Matrix
+
+| Service Area | Scope | Core Deliverables | Typical Cadence |
+|---|---|---|---|
+| Graphics Design | Brand and campaign creative production | Social creatives, ad banners, landing visuals, brochures, sales deck assets | Weekly/Monthly |
+| Video Editing and Motion | Multimedia production for brand and marketing | Project reels, testimonial videos, ad cutdowns, subtitles, motion graphics | Weekly/Monthly |
+| SEO (Technical/On-page/Off-page) | Search visibility and ranking growth | Technical audit, page optimization, backlink plan, local SEO, monthly ranking report | Monthly |
+| Social Media Management | Content operations and audience growth | Content calendar, publishing, response handling, performance summary | Weekly/Monthly |
+| Content Writing and Copy | Conversion-focused written communication | Website copy, blog articles, campaign copy, bilingual content support | Weekly/Monthly |
+| Paid Ads Management (Meta/Google) | Performance marketing and lead acquisition | Funnel setup, audience strategy, creative testing, optimization, reporting | Daily/Weekly/Monthly |
+
+### 8.2 Detailed Technical Support Modules
+
+#### E1. Graphics Design Support
+
+1. Brand-compliant social media posts, carousels, and ad creatives.
+2. Property spotlight templates for ongoing and upcoming projects.
+3. Corporate presentation assets, flyers, event and fair promotional designs.
+4. Campaign design packs aligned with monthly marketing goals.
+
+#### E2. Video Editing and Motion Support
+
+1. Promotional video edits for project launches and handover announcements.
+2. Testimonial video cleanup, branding, transitions, and captioning.
+3. Short-form ad cuts for Meta/YouTube campaigns.
+4. Drone footage editing and montage production.
+
+#### E3. SEO Operations Support
+
+1. Technical SEO audits and issue-resolution roadmap.
+2. On-page optimization: titles, metadata, schema, internal links, and content structure.
+3. Off-page and authority-building plan with controlled backlink strategy.
+4. Local SEO and Google Business profile optimization.
+5. Monthly reporting: keyword movement, traffic quality, conversion performance.
+
+#### E4. Social Media Management Support
+
+1. Channel strategy for Facebook, Instagram, YouTube, and LinkedIn (as required).
+2. Monthly content calendar with posting themes and campaign windows.
+3. Publishing and basic community engagement workflow.
+4. Monthly audience and engagement report with recommendations.
+
+#### E5. Content Writing and Copywriting Support
+
+1. Website and landing page copy updates for conversion and SEO.
+2. Blog and knowledge content focused on real-estate buyer intent.
+3. Ad copy variants for testing by channel and audience segment.
+4. Bangla/English content adaptation where needed.
+
+#### E6. Paid Ads Management Support
+
+1. Meta and Google campaign architecture setup.
+2. Lead objective campaign management with budget optimization.
+3. Audience segmentation, retargeting, and lookalike experiments.
+4. Weekly optimization and monthly performance reports.
+
+### 8.3 In Scope vs Out of Scope (Technical Support)
+
+| Area | In Scope | Out of Scope (Unless Added by Change Request) |
+|---|---|---|
+| Graphics/Video | Ongoing creative and edits for approved campaigns | Full 3D animation film production |
+| SEO | Technical, on-page, off-page strategy and reporting | Guaranteed ranking position commitments |
+| Social Media | Planning, publishing, and standard engagement handling | 24/7 community moderation |
+| Ads Management | Strategy, optimization, reporting | Direct media budget payment by agency |
+| Content | Website/blog/campaign copywriting | Legal content responsibility without client review |
+
+## 9. Phase-by-Phase Delivery Plan
+
+### 9.1 Roadmap Table
+
+| Phase | Name | Duration | Priority | Core Deliverables |
+|---|---|---|---|---|
+| P1 | Foundation and Core Website | 8-10 weeks | Critical | Homepage, listings, project details, about/contact, CMS base, SEO setup |
+| P2 | Lead Engine and Content Hub | 5-6 weeks | High | Blog/media, testimonials, gallery, calculators, WhatsApp integration, lead forms |
+| P3 | Business Portals | 6-8 weeks | High | Landowner module, NRB section, career module, map, bilingual roll-out |
+| P4 | Customer Portal and CRM | 8-10 weeks | Medium | Auth, buyer/landowner dashboards, full CRM workflow, notifications |
+| P5 | Advanced Scale Features | 6-8 weeks | Medium | 3D tours, comparison tools, advanced analytics, performance hardening |
+
+### 9.2 Technical Support Rollout Alignment
+
+| Service Domain | Starts In | Execution Model |
+|---|---|---|
+| Graphics Design | P1 | Campaign and brand assets for launch readiness |
+| Video Editing | P2 | Content and ad video pipeline |
+| SEO Operations | P1 | Technical baseline + monthly optimization |
+| Social Media Management | P2 | Calendar-based channel operations |
+| Content Writing | P1 | Website copy + blog engine support |
+| Paid Ads Management | P2 | Lead funnel execution and optimization |
+
+## 10. Recommended Technology Stack
+
+| Layer | Technology | Rationale |
+|---|---|---|
+| Frontend | Next.js 14+ | SSR/SSG for SEO and performance |
+| UI Layer | Tailwind CSS + component library | Fast, consistent, responsive UI delivery |
+| CMS | Sanity.io or Strapi | Flexible editorial control |
+| Backend | Node.js (Express or NestJS) | Scalable API ecosystem |
+| Database | PostgreSQL + Prisma | Reliable relational structure |
+| Storage/CDN | Cloudinary or S3 + CloudFront | Media optimization and delivery |
+| Authentication | NextAuth + JWT/OTP integrations | Secure user lifecycle |
+| Maps | Google Maps API | Location search and project map experience |
+| Analytics | GA4 + GTM + Hotjar/Clarity | End-to-end behavior and conversion visibility |
+| Delivery | Vercel + cloud backend + Cloudflare | Performance, security, and scaling |
+
+## 11. Non-Functional Requirements (NFR)
+
+### 11.1 Performance Targets
+
+| Metric | Target |
+|---|---|
+| Mobile page load | Under 3 seconds on 4G |
+| Lighthouse performance | 90+ |
+| SEO score | 95+ |
+| LCP | Under 2.5s |
+| FID/INP | Under 100ms target class |
+| CLS | Under 0.1 |
+
+### 11.2 Security and Compliance
+
+1. HTTPS enforced end-to-end.
+2. OWASP Top 10 mitigation practices.
+3. XSS/CSRF/SQL injection prevention standards.
+4. Role-based admin access with optional 2FA and IP control.
+5. Backup and vulnerability monitoring process.
+
+### 11.3 Accessibility and Device Support
+
+1. Responsive support across mobile, tablet, and desktop.
+2. WCAG 2.1 AA readiness for core journeys.
+3. Keyboard navigation and readable contrast standards.
+
+## 12. Governance and Delivery Framework
+
+### 12.1 Working Model
+
+1. Agile sprint cycle with weekly progress review.
+2. Shared tracker for tasks, approvals, and blockers.
+3. Staging deployment before production release.
+4. UAT sign-off per phase gate.
+
+### 12.2 Milestone Tracker
+
+| Milestone | Deliverable | Target |
+|---|---|---|
+| M1 | Kickoff and requirement sign-off | Week 1 |
+| M2 | Design and wireframe approval | Week 2-3 |
+| M3 | Phase 1 staging | Week 8 |
+| M4 | Phase 1 production | Week 10 |
+| M5 | Phase 2 production | Week 16 |
+| M6 | Phase 3 production | Week 24 |
+| M7 | Phase 4 production | Week 34 |
+| M8 | Final launch and handover | Week 42 |
+
+### 12.3 Client Responsibilities
+
+1. Provide approved content, visual assets, and project data on schedule.
+2. Nominate SPOC for decision and approval flow.
+3. Complete phase reviews within agreed UAT windows.
+4. Provide access for domain, DNS, analytics, and ad accounts as required.
+
+## 13. Domain F - Post-Launch Support and Maintenance
+
+### 13.1 SLA Matrix
+
+| Priority | Example Incident | Response SLA | Included Period |
+|---|---|---|---|
+| P1 Critical | Site down, severe security issue | Under 2 hours | 12 months |
+| P2 High | Major feature or CMS outage | Under 8 hours | 12 months |
+| P3 Medium | Minor bug or performance dip | Under 24 hours | 12 months |
+| P4 Low | Enhancement or non-urgent update | Under 72 hours | 12 months |
+
+### 13.2 Monthly Retainer Activities
+
+1. Security patching and dependency maintenance.
+2. Performance monitoring and optimization.
+3. SEO report and search opportunity plan.
+4. Content and campaign support execution.
+5. Infrastructure health and backup checks.
+
+## 14. Scope Clarification
+
+### 14.1 Included in This Master Scope
+
+1. Complete enterprise website ecosystem design and development.
+2. Customer portal, CRM-ready admin backend, and analytics base.
+3. Integrated technical support: graphics, video, SEO, social, content, and ads.
+4. Post-launch support framework and SLA coverage.
+
+### 14.2 Excluded Unless Added by Change Request
+
+1. Third-party paid media budget.
+2. Legal, taxation, or regulatory advisory outside platform implementation.
+3. New enterprise systems not listed in this scope (for example ERP integration).
+
+## 15. Appendix
+
+### 15.1 Module Volume Summary
+
+| Domain | Description | Module Count |
+|---|---|---|
+| Domain A | Public Website Frontend | 15 |
+| Domain B | Customer Portal | 3 |
+| Domain C | Admin/CMS/CRM/Analytics | 4 |
+| Domain D | Marketing Integration | 2 |
+| Domain E | Integrated Technical Support Services | 6 |
+| Domain F | Post-Launch Operations | 2 |
+| Total | Unified Ecosystem | 32 |
+
+### 15.2 Sign-Off Block
+
+| Role | Name | Date | Signature |
+|---|---|---|---|
+| Client Representative |  |  |  |
+| Chairman |  |  |  |
+| Delivery Partner |  |  |  |
 
 ---
 
-## 1. Executive Summary
-The business currently depends heavily on social posts, direct calls, and manual follow-up. This causes inconsistent lead handling, low visibility across the sales funnel, and limited operational control.
-
-This platform will deliver:
-- A conversion-first public website for property discovery and lead capture
-- A centralized admin and mini-CRM for lead lifecycle management
-- Structured property inventory management with full publishing workflow
-- Analytics for decision-making, campaign tracking, and conversion optimization
-
-## 2. Business Objectives and Outcomes
-### Primary objectives
-- Increase qualified inbound inquiries from digital channels
-- Reduce lead leakage via structured follow-up workflows
-- Improve trust with verified listing structure and transparent project information
-- Digitize inventory and sales operations end-to-end
-
-### Business outcomes
-- Faster lead response times
-- Better conversion from inquiry to site visit
-- Better conversion from site visit to booking
-- Better team accountability through audit logs and ownership
-
-## 3. Success Metrics and KPIs
-| Metric | Baseline | Target (90 days) | Owner |
-|---|---:|---:|---|
-| Lead response SLA (first contact) | Manual | <= 10 minutes | Sales Ops |
-| Inquiry to contacted rate | Not tracked | >= 85% | CRM Admin |
-| Contacted to visit scheduled | Not tracked | >= 35% | Sales Team |
-| Visit to booking conversion | Not tracked | >= 12% | Sales Team |
-| Bounce rate (SEO landing pages) | Unknown | <= 40% | Growth |
-| Organic traffic growth | Low | +30% | Marketing |
-| Published listing quality score | Inconsistent | >= 90% complete metadata | Content Ops |
-
-## 4. Scope Definition (In/Out)
-### 4.1 In scope (MVP)
-- Public website (SEO optimized)
-- Property listing and filtering
-- Property details page with conversion CTAs
-- Lead capture forms and one-click calling actions
-- Admin dashboard
-- Property management (CRUD + media)
-- Lead pipeline management (stages + notes + assignment)
-- Basic user and role management
-- Audit logs for critical events
-
-### 4.2 Out of scope (MVP)
-- Full ERP/accounting integration
-- AI recommendation engine
-- Native mobile app
-- Automated legal document generation
-
-## 5. Stakeholders, Personas, and User Groups
-### Stakeholders
-- Business owner (chairman and leadership)
-- Sales manager
-- Sales agents
-- Marketing team
-- Admin operator
-
-### User groups
-- Buyer/tenant (public visitor)
-- Property owner/agent (internal or partner contributor)
-- Admin and sales operations team
-
-### Personas
-#### Persona A: Buyer/Tenant
-- Goal: Find trusted property quickly with proper budget and location filters
-- Pain points: Fake or outdated listings, slow response from sellers
-- Needs: Accurate listing details, instant contact options, transparent pricing
-
-#### Persona B: Sales Agent
-- Goal: Convert assigned leads to visits and bookings
-- Pain points: Unstructured lead tracking, missed follow-ups
-- Needs: Single lead inbox, reminders, notes, stage updates
-
-#### Persona C: Admin/Owner
-- Goal: Control quality, monitor performance, optimize conversion
-- Pain points: No funnel visibility, fragmented data
-- Needs: Dashboard, role-based controls, lead and listing analytics
-
-## 6. Functional Requirements
-## 6.1 Public Website and Lead Capture
-### FR-101 Search and filter
-- Filtering by division, district, area, road, budget range, size range, property type
-- Orientation filter including south-facing
-- Result count, sort options, pagination metadata
-
-### FR-102 Listing cards
-- Show title, location, price, size, featured badge, thumbnail
-- Link to canonical property detail URL
-
-### FR-103 Property details
-- Media gallery, metadata, map, nearby facilities
-- Trust indicators: verification state and last updated timestamp
-- CTA cluster: call, WhatsApp, inquiry form
-
-### FR-104 Inquiry form
-- Required fields: name, phone
-- Optional fields: message, preferred call time
-- Source attribution and auto-creation of CRM lead with stage New
-
-### FR-105 SEO pages
-- Dynamic metadata per listing and location page
-- Structured data markup for listing entities
-
-## 6.2 Admin and CRM Platform
-### FR-201 Dashboard
-- Listing counts by status
-- Lead counts by stage and source
-- SLA aging buckets (0-10m, 10-60m, >60m)
-
-### FR-202 Property management
-- Create/Edit/Delete/Archive records
-- Status transitions with role and validation constraints
-- Bulk media upload and ordering
-
-### FR-203 Lead pipeline
-- Stages: New -> Attempted -> Contacted -> Visit Scheduled -> Negotiation -> Won/Lost
-- Immutable timeline entry on each stage transition
-- Owner assignment, notes, follow-up date
-
-### FR-204 Lead assignment
-- Manual assignment by manager/admin
-- Optional round-robin for incoming unassigned leads
-
-### FR-205 Activity logging
-- Track stage changes, assignment, notes, contact attempts
-- Chronological lead activity feed
-
-### FR-206 User and role management
-- Roles: Super Admin, Admin, Sales Agent, Content Editor, Viewer
-- Permission controls by module/action
-
-## 6.3 Notification and Reminder System
-### FR-301 Internal reminders
-- Generate reminders when follow-up is due
-- Display reminder badges on dashboard and lead list
-
-### FR-302 External communication hooks
-- Optional adapters for WhatsApp/SMS integrations in future phases
-
-## 6.4 Visualization and Advertising Module
-### FR-401 Listing media set (mandatory)
-- Minimum 10 high-resolution images per listing (web-optimized variants auto-generated)
-- At least 1 walkthrough video for premium listings
-- Floor plan image required for flat/apartment inventory
-- Thumbnail, card, and hero variants generated automatically
-
-### FR-402 Video experience
-- Property detail page supports embedded short-form and long-form video
-- Adaptive bitrate streaming for slow/fast networks
-- Video poster image and fallback image for unsupported devices
-- Track watch events (start, 25%, 50%, 75%, complete) for conversion analytics
-
-### FR-403 360 and 3D experience
-- Support 360 panorama viewer for unit interiors
-- Support optional glTF/GLB based 3D model viewer for premium projects
-- Include interaction analytics: open, rotate, zoom, dwell time
-- Provide graceful fallback to static gallery when device/browser is weak
-
-### FR-404 Advertising campaign creatives
-- Campaign creative library for Meta, YouTube, TikTok, and Display sizes
-- Each creative linked to campaign, audience, and landing page URL
-- UTM and source attribution auto-attached to campaign landing links
-- Creative approval workflow: Draft -> In Review -> Approved -> Published
-
-### FR-405 Creative QA and compliance
-- Validate image dimensions and file size against channel specs
-- Validate video duration and aspect ratios (1:1, 4:5, 9:16, 16:9)
-- Enforce watermark/logo policy before publish
-- Block publish if mandatory legal copy is missing
-
-## 7. Business Rules and Validation Rules
-### 7.1 Business Rules
-- BR-001: Published listing must include mandatory metadata and at least 5 images
-- BR-002: Lead cannot move to Visit Scheduled without first contact
-- BR-003: Won requires deal value and close date
-- BR-004: Lost requires reason code
-- BR-005: Only Admin or Super Admin can archive listing
-- BR-006: Only assigned agent or manager can edit lead notes
-
-### 7.2 Validation Rules
-#### Phone
-- Accept Bangladeshi local format: 01XXXXXXXXX
-- Reject invalid length and non-digit payload (except future international mode)
-
-#### Listing
-- Price must be positive integer
-- Size must be positive number
-- Location hierarchy must be complete before publish
-
-## 8. Non-Functional Requirements
-- NFR-101 Performance: Core pages <= 2s on standard 4G
-- NFR-102 UX performance: LCP <= 2.5s on primary landing pages
-- NFR-103 Security: JWT auth, RBAC, validation, sanitization, rate limiting
-- NFR-104 Scalability: Modular backend and indexed search-critical queries
-- NFR-105 SEO: SSR/ISR, dynamic metadata, structured data, sitemap, robots
-- NFR-106 Reliability: 99.9% monthly availability target
-- NFR-107 API performance: p95 <= 350ms under normal load for core endpoints
-- NFR-108 Operations: daily backup, 30-day retention, centralized observability
-- NFR-109 Media performance: hero media start render <= 1.5s on broadband, <= 2.5s on 4G
-- NFR-110 Media delivery: CDN-backed image/video with signed URLs for protected assets
-- NFR-111 3D fallback: non-WebGL clients must receive static media without broken UI
-
-## 9. Data Model (High-Level)
-### Property entity
-```json
-{
-  "id": "",
-  "title": "",
-  "slug": "",
-  "price": 0,
-  "location": {
-    "division": "",
-    "district": "",
-    "area": "",
-    "road": ""
-  },
-  "type": "flat|land|commercial",
-  "sizeSqft": 0,
-  "facing": "south|north|east|west",
-  "amenities": [],
-  "media": [],
-  "status": "draft|published|reserved|sold|rented|archived",
-  "createdAt": "",
-  "updatedAt": ""
-}
-```
-
-### Lead entity
-```json
-{
-  "id": "",
-  "propertyId": "",
-  "name": "",
-  "phone": "",
-  "source": "website|facebook|whatsapp|direct",
-  "stage": "new|attempted|contacted|visit_scheduled|negotiation|won|lost",
-  "assignedAgentId": "",
-  "notes": [],
-  "lastActivityAt": "",
-  "createdAt": ""
-}
-```
-
-## 10. API Surface (MVP)
-### Property APIs
-- GET /api/properties
-- GET /api/properties/:id
-- POST /api/admin/properties
-- PATCH /api/admin/properties/:id
-- PATCH /api/admin/properties/:id/status
-
-### Lead APIs
-- POST /api/leads
-- GET /api/admin/leads
-- PATCH /api/admin/leads/:id
-- PATCH /api/admin/leads/:id/stage
-- PATCH /api/admin/leads/:id/assign
-
-## 11. Role-Based Access Matrix
-| Module | Super Admin | Admin | Sales Agent | Content Editor | Viewer |
-|---|---|---|---|---|---|
-| Listings Create/Edit | Yes | Yes | No | Yes | No |
-| Listings Publish/Archive | Yes | Yes | No | Limited | No |
-| Leads View All | Yes | Yes | Limited | No | Read-only |
-| Leads Assign | Yes | Yes | No | No | No |
-| Leads Stage Update | Yes | Yes | Assigned only | No | No |
-| Reports Export | Yes | Yes | Limited | No | No |
-| User Management | Yes | Yes | No | No | No |
-
-## 12. Architecture and System Design
-### 12.1 High-level architecture
-```mermaid
-flowchart LR
-  U[Website Visitor] --> FE[Next.js Frontend]
-  FE --> API[Node.js API Layer]
-  API --> AUTH[Auth and RBAC]
-  API --> PROP[Property Service]
-  API --> LEAD[Lead Service]
-  API --> ANALYTICS[Analytics Service]
-  PROP --> DB[(MongoDB/PostgreSQL)]
-  LEAD --> DB
-  ANALYTICS --> DB
-  PROP --> MEDIA[(Cloudinary or S3)]
-  FE --> CDN[Edge CDN]
-```
-
-### 12.2 Context view
-```mermaid
-flowchart TB
-  Buyer[Buyer or Tenant] --> Web[Public Web Platform]
-  Agent[Sales Agent] --> Portal[Operations Portal]
-  Manager[Sales Manager] --> Portal
-  Owner[Business Owner] --> Portal
-  Web --> API[Platform API]
-  Portal --> API
-  API --> DB[(Primary Database)]
-  API --> Storage[(Media Storage)]
-  API --> Analytics[(BI Dataset)]
-```
-
-### 12.3 Container-level view
-```mermaid
-flowchart LR
-  subgraph Client
-    FE1[Next.js Public Site]
-    FE2[Admin and CRM Frontend]
-  end
-
-  subgraph Backend
-    GW[API Gateway]
-    AS[Auth Service]
-    PS[Property Service]
-    LS[Lead Service]
-    RS[Reporting Service]
-  end
-
-  subgraph Data
-    DB[(MongoDB or PostgreSQL)]
-    RD[(Redis)]
-    FS[(S3 or Cloudinary)]
-  end
-
-  FE1 --> GW
-  FE2 --> GW
-  GW --> AS
-  GW --> PS
-  GW --> LS
-  GW --> RS
-  PS --> DB
-  LS --> DB
-  RS --> DB
-  GW --> RD
-  PS --> FS
-```
-
-### 12.4 Media and advertising asset architecture
-```mermaid
-flowchart LR
-  subgraph Authoring
-    CM[Content Manager]
-    DS[Design Team]
-  end
-
-  subgraph Platform
-    CMS[Asset Metadata Service]
-    MQ[Processing Queue]
-    TR[Transcoder and Optimizer]
-    TAG[Campaign Tagging Service]
-  end
-
-  subgraph Delivery
-    OBJ[(Object Storage)]
-    CDN[Global CDN]
-    WEB[Website and Landing Pages]
-    AD[Ad Platforms]
-  end
-
-  CM --> CMS
-  DS --> CMS
-  CMS --> MQ
-  MQ --> TR
-  TR --> OBJ
-  OBJ --> CDN
-  CMS --> TAG
-  TAG --> AD
-  CDN --> WEB
-```
-
-## 13. Visualization and Advertising Experience
-### 13.1 User-facing visualization strategy
-- Listing pages prioritize visual trust with image-first hero sections
-- Video tours appear above fold for premium inventory
-- 3D and 360 tours are enabled when assets exist and device capability allows
-- Nearby infrastructure visualization includes map overlays (school, mosque, hospital, market)
-
-### 13.2 Advertisement content strategy
-- Primary channels: Facebook/Instagram, YouTube, TikTok, Google Display
-- Campaign types: awareness, lead capture, retargeting, inventory-specific offers
-- Each campaign has dedicated landing pages with matched creative intent
-- All ad clicks map to lead source and campaign ID in CRM
-
-### 13.3 Creative asset specification matrix
-| Asset Type | Minimum Spec | Preferred Spec | Usage |
-|---|---|---|---|
-| Property image | 1600x900 JPG/WebP | 2400x1350 WebP/AVIF | Listing hero and gallery |
-| Floor plan | 1400x1400 PNG | 2000x2000 PNG/SVG | Detail page and brochure |
-| Short ad video | 1080x1920, 15-30s | 1080x1920, 20-45s | Reels/shorts ads |
-| Long video walkthrough | 1920x1080, 60-180s | 4K master + 1080p renditions | Listing detail + YouTube |
-| 360 panorama | Equirectangular 4K | Equirectangular 8K | Interactive room view |
-| 3D model | glTF/GLB <= 25MB | glTF/GLB <= 40MB + LOD | Premium project showcase |
-
-### 13.4 Visual conversion funnel
-```mermaid
-flowchart TD
-  A[Ad Impression] --> B[Ad Click]
-  B --> C[Campaign Landing Page]
-  C --> D[Visual Trust Layer: Image plus Video plus 3D]
-  D --> E{User intent}
-  E -->|Immediate| F[Click Call or WhatsApp]
-  E -->|Evaluate| G[Browse gallery and 3D tour]
-  G --> H[Submit inquiry]
-  F --> I[CRM Lead Created]
-  H --> I
-  I --> J[Agent follow-up and site visit]
-```
-
-### 13.5 Creative production and approval flow
-```mermaid
-flowchart LR
-  D1[Brief and offer] --> D2[Creative design]
-  D2 --> D3[Copy and legal review]
-  D3 --> D4[Channel adaptation]
-  D4 --> D5[QA validation]
-  D5 --> D6[Approval]
-  D6 --> D7[Publish campaign]
-  D7 --> D8[Track CTR CVR CPL]
-  D8 --> D9[Iterate creatives]
-```
-
-## 14. Key User and System Flows
-### 13.1 Lead generation flow
-```mermaid
-flowchart TD
-  A[User lands on SEO page] --> B[Search properties]
-  B --> C[Open property detail]
-  C --> D{CTA chosen}
-  D -->|Call| E[Click to call]
-  D -->|WhatsApp| F[Open WhatsApp chat]
-  D -->|Form submit| G[Submit inquiry form]
-  G --> H[Lead created in CRM]
-  H --> I[Assigned to sales agent]
-  I --> J[First contact attempt]
-```
-
-### 13.2 Lead pipeline flow
-```mermaid
-flowchart LR
-  N[New] --> A[Attempted]
-  A --> C[Contacted]
-  C --> V[Visit Scheduled]
-  V --> G[Negotiation]
-  G --> W[Won]
-  G --> L[Lost]
-```
-
-### 13.3 Inquiry submission sequence
-```mermaid
-sequenceDiagram
-  participant U as User
-  participant FE as Frontend
-  participant API as Lead API
-  participant DB as Database
-  participant CRM as CRM Pipeline
-
-  U->>FE: Submit inquiry form
-  FE->>API: POST /api/leads
-  API->>API: Validate payload and normalize phone
-  API->>DB: Insert lead
-  API->>CRM: Set stage = New and owner = queue
-  CRM-->>API: Stage event created
-  API-->>FE: Success response with lead ID
-```
-
-## 15. Reporting, QA, and Traceability
-### Reporting requirements
-- Daily lead report by source and stage
-- Agent performance (contact SLA and conversion)
-- Listing performance (views, contacts, contribution)
-
-### Data retention
-- Lead timeline and notes retained minimum 24 months
-- Admin-sensitive audit logs retained minimum 24 months
-
-### QA strategy
-- Unit tests for services and validators
-- Integration tests for API workflows
-- End-to-end tests for lead capture and stage transitions
-
-### Critical acceptance tests
-- Lead creation from public page
-- Stage transition guard checks
-- Role restriction checks
-- Listing publish validation checks
-
-### Requirement traceability matrix (sample)
-| Requirement ID | Module | Test Case ID | Priority |
-|---|---|---|---|
-| FR-104 | Inquiry form | TC-LEAD-001 | High |
-| FR-203 | Lead pipeline | TC-LEAD-012 | High |
-| FR-206 | RBAC | TC-AUTH-007 | High |
-| BR-002 | Stage guard | TC-LEAD-018 | High |
-| NFR-107 | API performance | TC-PERF-004 | Medium |
-
-## 16. Delivery Roadmap
-### 16.1 Delivery strategy
-- Agile delivery in 2-week sprints
-- MVP-first release with iterative hardening
-- Weekly steering review with client
-
-### 16.2 Phase plan
-| Phase | Duration | Objectives | Deliverables |
-|---|---|---|---|
-| Phase 0 Discovery and Alignment | Week 1 | Scope, KPI, architecture finalization | Approved PRD, risk register, design inputs |
-| Phase 1 UX and Technical Foundation | Week 2 | UX and technical bootstrap | Figma flows, API contract draft, CI/CD baseline |
-| Phase 2 Core Build | Week 3-5 | Public site, property module, lead capture | Search, listing detail, inquiry API, listing CRUD |
-| Phase 3 CRM and Ops Maturity | Week 6-7 | Lead pipeline, assignment, reporting | Stages, notes, activity timeline, SLA dashboard |
-| Phase 4 Hardening and UAT | Week 8 | QA, security, optimization | UAT report, closure report, release candidate |
-| Phase 5 Go-Live and Hypercare | Week 9 | Production launch and stabilization | Deployment, runbook, support |
-
-### 16.3 Timeline view
-```mermaid
-timeline
-  title Real Estate Platform Delivery Timeline
-  Week 1 : Discovery workshops
-         : Scope and KPI sign-off
-  Week 2 : UX wireframes and architecture baseline
-         : API contract freeze v1
-  Week 3-5 : Core engineering delivery
-           : Public website and listing management
-  Week 6-7 : CRM pipeline and reporting delivery
-  Week 8 : UAT, security hardening, performance tuning
-  Week 9 : Production launch and hypercare
-```
-
-### 16.4 Gantt view
-```mermaid
-gantt
-  title Delivery Gantt - Real Estate Platform
-  dateFormat  YYYY-MM-DD
-  section Discovery
-  Scope finalization and KPI lock           :done, a1, 2026-04-01, 7d
-  section Design and Foundation
-  UX wireframes and design system           :a2, after a1, 7d
-  Architecture and API contract             :a3, after a1, 7d
-  section Core Development
-  Public website and SEO pages              :a4, after a2, 14d
-  Property management module                :a5, after a3, 14d
-  Lead capture and API workflows            :a6, after a3, 14d
-  section CRM and Operations
-  Lead pipeline and assignment              :a7, after a6, 10d
-  Reporting and SLA dashboard               :a8, after a7, 4d
-  section QA and Release
-  QA regression and bug fixing              :a9, after a8, 6d
-  UAT and production readiness              :a10, after a9, 3d
-  Production go-live                        :milestone, a11, after a10, 1d
-```
-
-## 17. Delivery Gates and Sign-off Criteria
-### Gate 1: Discovery complete
-- Approved PRD
-- Signed scope and priority matrix
-
-### Gate 2: Build readiness
-- Finalized API contracts
-- Approved UX flows and high-fidelity pages
-
-### Gate 3: MVP functional complete
-- All High priority requirements delivered
-- Critical defect count = 0
-
-### Gate 4: UAT pass
-- Client-approved UAT report
-- Go-live checklist complete
-
-## 18. Go-Live, Hypercare, and Governance
-### Go-live checklist
-- Production environment configured
-- SSL and domain routing validated
-- Backup and restore test completed
-- Monitoring dashboards active
-- Error alert channels configured
-- Rollback strategy documented
-
-### Communication cadence
-- Daily: internal engineering stand-up
-- Weekly: client progress review
-- Biweekly: sprint demo and acceptance
-- On-demand: risk escalation sync
-
-### RACI matrix (simplified)
-| Activity | Client Owner | Product Lead | Engineering | QA | DevOps |
-|---|---|---|---|---|---|
-| Requirement sign-off | A | R | C | C | C |
-| UX and flow approval | A | R | C | C | I |
-| Feature development | I | C | R | C | C |
-| Testing and validation | I | C | C | R | C |
-| Production release | C | C | C | C | R |
-
-### Post-launch support
-- Hypercare duration: 2 to 4 weeks
-- Critical issue response SLA: within 1 hour
-- Scope: bug fixes, minor optimization, monitoring stabilization
-
-## 19. Risks, Dependencies, and Mitigation
-### Dependencies
-| Dependency | Impact if delayed | Mitigation |
-|---|---|---|
-| Client branding assets | Medium | Temporary placeholders and tokens |
-| Listing dataset quality | High | Import template and validation gate |
-| Hosting and domain access | High | Infra access request in Week 1 |
-| Third-party API keys | Medium | Stubs and feature flags |
-
-### Risk register
-| Risk | Probability | Impact | Mitigation |
-|---|---|---|---|
-| Poor listing data quality | Medium | High | Publish checklist and mandatory validation |
-| Slow lead follow-up | Medium | High | SLA dashboard and assignment alerts |
-| Traffic spikes | Low | Medium | CDN and scalable infrastructure |
-| Spam lead submissions | Medium | Medium | Rate limiting and phone validation |
-
-### Risk handling flow
-```mermaid
-flowchart TD
-  A[Identify risk] --> B[Score probability and impact]
-  B --> C{Severity}
-  C -->|High| D[Define immediate mitigation owner]
-  C -->|Medium| E[Track in weekly review]
-  C -->|Low| F[Monitor and log]
-  D --> G[Execute mitigation]
-  E --> G
-  F --> G
-  G --> H[Reassess residual risk]
-```
-
-## 20. Future Phases
-- Mobile app (React Native)
-- Payment integration (bKash, Nagad)
-- Facebook lead webhook automation
-- WhatsApp/SMS automation integration
-- AI-assisted property recommendation and lead scoring
-- Appointment scheduling calendar and reminders
-
-## 21. Final Sign-off Block
-- Client representative: ______________________
-- Delivery lead: _____________________________
-- Date: _____________________________________
+**ADVANCE LANDMARK LIMITED - MASTER SCOPE BIBLE v1.0 (April 2026) - CONFIDENTIAL**  
+Prepared exclusively for Fahad Hossain, Chairman, Advance Landmark Limited.
