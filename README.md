@@ -9,7 +9,7 @@
 | Field                    | Value                                                                                |
 | ------------------------ | ------------------------------------------------------------------------------------ |
 | Document Title           | Enterprise Real Estate Digital Platform Ecosystem - Master Scope Bible               |
-| Version                  | 1.1                                                                                  |
+| Version                  | Master Scope (v1.1 – April 2026).                                                                               |
 | Date                     | April 2026                                                                           |
 | Confidentiality          | Confidential                                                                         |
 | Prepared For             | Advance Landmark Limited                                                             |
